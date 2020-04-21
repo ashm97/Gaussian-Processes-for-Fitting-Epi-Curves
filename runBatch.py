@@ -5,7 +5,6 @@ Created on Tue Apr  7 08:41:59 2020
 @author: Ash
 """
 
-
 import numpy as np
 from fitderiv import fitderiv
 import matplotlib.pyplot as plt
@@ -15,13 +14,6 @@ d= np.genfromtxt('./Data/y_true_20_04_2020.csv', delimiter= ',')
 d= np.delete(d, 0, 0) # remove header
 t= d[:, 0]
 od= d[:, 2] # take just mean y_true column
-
-
-
-
-
-
-
 
 # Loop GP over expanding window 
 for i in range(1,(len(t) + 1)):
